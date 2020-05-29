@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Record>
+
+
+<div class="Records">
+    @foreach (var record in Model)
+    {
+        <div class="Record">
+            <h2>@record.RecordId</h2>
+            <h1>@record.Nick</h1>
+            <h2>@record.DatePosted.ToShortDateString()</h2>
+            <h2>@record.Country</h2>
+            <h2>@record.Email</h2>
+            <h2>@record.Comment</h2>
+        </div>
+    }
+</div>
