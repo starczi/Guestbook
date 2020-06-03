@@ -13,6 +13,11 @@ form {
   margin: 6rem auto;
 }
 
+form .field-validation-error {
+  color: #e06c75;
+  margin-bottom: 0.8rem;
+}
+
 form h2,
 form h4 {
   text-align: center;
@@ -34,7 +39,7 @@ form .feedback-input {
   font-size: 1.1rem;
   border-radius: 0.5rem;
   background: transparent;
-  border: 2px solid #CC6666;
+  border: 2px solid #009a9a;
   transition: all 0.5s ease-in-out;
   padding: 0.8rem;
   margin-bottom: 1rem;
@@ -44,7 +49,7 @@ form .feedback-input {
 }
 
 form .feedback-input:focus {
-  border-color: #bf4040;
+  border-color: #00cdcd;
 }
 
 form input:-webkit-autofill,
@@ -64,7 +69,7 @@ form ::placeholder {
 
 form [type="submit"] {
   width: 100%;
-  background: #CC6666;
+  background: #009a9a;
   border-radius: 5px;
   cursor: pointer;
   color: #fff;
@@ -75,7 +80,7 @@ form [type="submit"] {
 }
 
 form [type="submit"]:hover {
-  background: #bf4040;
+  background: #00cdcd;
 }
 
 .records {
@@ -108,7 +113,7 @@ form [type="submit"]:hover {
 }
 
 .records .record h2 {
-  border: 2px solid #CC6666;
+  border: 2px solid #009a9a;
   margin-bottom: 0.5rem;
   border-radius: 0.5rem;
   padding: 0.5rem;
@@ -118,7 +123,7 @@ form [type="submit"]:hover {
 }
 
 .records .record h2:hover {
-  border-color: #bf4040;
+  border-color: #00cdcd;
 }
 
 .menu-btn {
@@ -216,7 +221,7 @@ form [type="submit"]:hover {
 }
 
 .nav .menu-nav__item.active > a {
-  color: #CC6666;
+  color: #00cdcd;
 }
 
 .nav .menu-nav__link {
@@ -229,7 +234,7 @@ form [type="submit"]:hover {
 }
 
 .nav .menu-nav__link:hover {
-  color: #CC6666;
+  color: #00cdcd;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -306,7 +311,7 @@ footer .social-icons a {
 }
 
 footer .social-icons a:hover {
-  color: #CC6666;
+  color: #009a9a;
 }
 
 footer .copyright {

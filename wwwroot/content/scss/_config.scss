@@ -1,6 +1,7 @@
 $primary-color:#272727;
-$secondary-color:#CC6666;
-$focus-color: darken($secondary-color, 10%);
+$secondary-color:#009a9a;
+$error-color:#e06c75;
+$focus-color: lighten($secondary-color, 10%);
 
 $light: 300;
 $medium: 500;
