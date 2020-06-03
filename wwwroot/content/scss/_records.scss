@@ -1,0 +1,43 @@
+.records {
+    width: 60vw;
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 420px;
+    margin: 4rem auto;
+    padding-top: 3rem;
+
+
+    .record {
+        color: set-text-color($primary-color);
+        list-style: none;
+        padding-bottom: 1.5rem;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__footer {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__country {
+            margin-left: 1rem;
+        }
+
+        h2 {
+            border: 2px solid $secondary-color;
+            margin-bottom: 0.5rem;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            font-weight: $light;
+            font-size: 1rem;
+            @include transition-ease;
+
+            &:hover {
+                border-color: $focus-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+form {
+    width: 60vw;
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 420px;
+    margin: 6rem auto;
+
+    h2,
+    h4 {
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        color: set-text-color($primary-color);
+        font-weight: $medium;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        font-weight: $light;
+    }
+
+    .feedback-input {
+        color: set-text-color($primary-color);
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: $light;
+        font-size: 1.1rem;
+        border-radius: 0.5rem;
+        background: transparent;
+        border: 2px solid $secondary-color;
+        @include transition-ease;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        outline: 0;
+        overflow: hidden;
+
+        &:focus {
+            border-color: $focus-color;
+        }
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        -webkit-text-fill-color: white;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    ::placeholder {
+        color: darken(set-text-color($primary-color), 40%);
+    }
+
+    [type="submit"] {
+        width: 100%;
+        background: $secondary-color;
+        border-radius: 5px;
+        cursor: pointer;
+        color: set-text-color($primary-color);
+        @include transition-ease;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        font-weight: 700;
+
+        &:hover {
+            background: $focus-color;
+        }
+    }
+}

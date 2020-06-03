@@ -1,0 +1,48 @@
+@import 'config';
+@import 'form';
+@import 'records';
+@import 'menu';
+@import 'responsive';
+
+body {
+    background: linear-gradient(to right,
+            rgba($primary-color, 0.9),
+            rgba($primary-color, 0.3)),
+        url(../../img/background-1.jpg) center top;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
+
+a {
+    color: set-text-color($primary-color);
+    text-decoration: none;
+}
+
+footer {
+    .social-icons {
+        position: fixed;
+        bottom: 1rem;
+        left: 0.5rem;
+
+        a {
+            padding: 0.4rem;
+            @include transition-ease;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+
+    .copyright {
+        font-size: 1rem;
+        position: fixed;
+        bottom: 0.4rem;
+        right: 0.5rem;
+        text-align: right;
+        padding: 1rem;
+        color: set-text-color($primary-color);
+    }
+}
