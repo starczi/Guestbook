@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
 
 namespace Guestbook.Models
 {
-    public class RecordRepository:IRecordRepository
+    public class RecordRepository : IRecordRepository
     {
         private readonly AppDbContext _appDbContext;
 
@@ -18,6 +18,13 @@ namespace Guestbook.Models
         public Record GetRecordById(int recordId)
         {
             return _appDbContext.Records.FirstOrDefault(r => r.RecordId == recordId);
+        }
+
+        public void CreateRecord(Record record)
+        {
+            _appDbContext.Records.Add(record);
+
+            _appDbContext.SaveChanges();
         }
     }
 }

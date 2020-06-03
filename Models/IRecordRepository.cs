@@ -7,5 +7,6 @@ namespace Guestbook.Models
     {
         IEnumerable<Record> AllRecords { get; }
         Record GetRecordById(int recordId);
+        void CreateRecord(Record record);
     }
 }

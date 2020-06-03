@@ -1,9 +1,20 @@
-﻿<form>
+﻿@model Record
+
+<form asp-action="Submit" method="post">
     <h2>Welcome to my guestbook!</h2>
     <h4>Sign it here &#128071;</h4>
-    <input name="name" type="text" class="feedback-input" placeholder="Name" />
-    <input name="email" type="text" class="feedback-input" placeholder="Email" />
-    <input name="location" type="text" class="feedback-input" placeholder="Country" />
-    <textarea maxlength="100" name="text" class="feedback-input" placeholder="Comment"></textarea>
+
+    <input asp-for="Nick" type="text" class="feedback-input" placeholder="Name" />
+    <span asp-validation-for="Nick" class="error-message"></span>
+
+    <input asp-for="Email" type="text" class="feedback-input" placeholder="Email" />
+    <span asp-validation-for="Email" class="error-message"></span>
+
+    <input asp-for="Country" type="text" class="feedback-input" placeholder="Country" />
+    <span asp-validation-for="Country" class="error-message"></span>
+
+    <textarea asp-for="Comment" maxlength="100" type="text" class="feedback-input" placeholder="Comment"></textarea>
+    <span asp-validation-for="Comment" class="error-message"></span>
+
     <input type="submit" value="SUBMIT" />
 </form>
