@@ -26,6 +26,10 @@
             margin-left: 1rem;
         }
 
+        &:hover h2 {
+            border-color: $focus-color;
+        }
+
         h2 {
             border: 2px solid $secondary-color;
             margin-bottom: 0.5rem;
@@ -34,10 +38,6 @@
             font-weight: $light;
             font-size: 1rem;
             @include transition-ease;
-
-            &:hover {
-                border-color: $focus-color;
-            }
         }
     }
 }

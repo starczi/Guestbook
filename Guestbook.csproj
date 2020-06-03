@@ -9,6 +9,8 @@
     <Compile Remove="Migrations\20200603084832_ModelUpdate.Designer.cs" />
     <Compile Remove="Migrations\20200603084958_model-update.cs" />
     <Compile Remove="Migrations\20200603084958_model-update.Designer.cs" />
+    <Compile Remove="Migrations\20200603152337_RemoveOnModelData.cs" />
+    <Compile Remove="Migrations\20200603152337_RemoveOnModelData.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
