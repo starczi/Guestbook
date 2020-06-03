@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Components;
 
 namespace Guestbook.Models
 {
@@ -8,12 +7,12 @@ namespace Guestbook.Models
     {
         public int RecordId { get; set; }
 
-        [Required (ErrorMessage = "Please enter your name")]
+        [Required(ErrorMessage = "Please enter your name")]
         public string Nick { get; set; }
 
         public DateTime DatePosted { get; set; }
 
-        [Required (ErrorMessage = "Please enter your country")]
+        [Required(ErrorMessage = "Please enter your country")]
         public string Country { get; set; }
 
         [Required(ErrorMessage = "Please enter your email")]
