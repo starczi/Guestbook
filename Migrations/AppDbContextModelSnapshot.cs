@@ -27,18 +27,22 @@ namespace Guestbook.Migrations
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("Comment")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Country")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("DatePosted")
                         .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Nick")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("RecordId");
@@ -51,7 +55,7 @@ namespace Guestbook.Migrations
                             RecordId = 1,
                             Comment = "first comment",
                             Country = "poland",
-                            DatePosted = new DateTime(2020, 6, 2, 19, 32, 59, 733, DateTimeKind.Local).AddTicks(3745),
+                            DatePosted = new DateTime(2020, 6, 3, 22, 8, 2, 964, DateTimeKind.Local).AddTicks(4868),
                             Email = "xxx@gmail.com",
                             Nick = "starczi"
                         },
@@ -60,7 +64,7 @@ namespace Guestbook.Migrations
                             RecordId = 2,
                             Comment = "second comment",
                             Country = "universe",
-                            DatePosted = new DateTime(2020, 6, 2, 19, 32, 59, 737, DateTimeKind.Local).AddTicks(8564),
+                            DatePosted = new DateTime(2020, 6, 3, 22, 8, 2, 970, DateTimeKind.Local).AddTicks(7936),
                             Email = "yyy@gmail.com",
                             Nick = "starczi1"
                         },
@@ -69,7 +73,7 @@ namespace Guestbook.Migrations
                             RecordId = 3,
                             Comment = "third comment",
                             Country = "europe",
-                            DatePosted = new DateTime(2020, 6, 2, 19, 32, 59, 737, DateTimeKind.Local).AddTicks(8783),
+                            DatePosted = new DateTime(2020, 6, 3, 22, 8, 2, 970, DateTimeKind.Local).AddTicks(8233),
                             Email = "zzz@gmail.com",
                             Nick = "starczi2"
                         });

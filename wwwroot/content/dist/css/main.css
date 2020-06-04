@@ -98,20 +98,6 @@ form [type="submit"]:hover {
   padding-bottom: 1.5rem;
 }
 
-.records .record__header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.records .record__footer {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.records .record__country {
-  margin-left: 1rem;
-}
-
 .records .record:hover h2 {
   border-color: #00cdcd;
 }
@@ -124,6 +110,29 @@ form [type="submit"]:hover {
   font-weight: 300;
   font-size: 1rem;
   transition: all 0.5s ease-in-out;
+  word-wrap: break-word;
+}
+
+.records .record__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.records .record__footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.records .record__nick, .records .record__country {
+  max-width: 202px;
+}
+
+.records .record__country {
+  margin-left: 1rem;
+}
+
+.records .record__comment {
+  max-width: 420px;
 }
 
 .menu-btn {

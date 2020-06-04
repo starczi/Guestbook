@@ -12,20 +12,6 @@
         list-style: none;
         padding-bottom: 1.5rem;
 
-        &__header {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        &__footer {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        &__country {
-            margin-left: 1rem;
-        }
-
         &:hover h2 {
             border-color: $focus-color;
         }
@@ -38,6 +24,30 @@
             font-weight: $light;
             font-size: 1rem;
             @include transition-ease;
+            word-wrap: break-word;
+        }
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__footer {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__nick,
+        &__country {
+            max-width: 202px;
+        }
+
+        &__country {
+            margin-left: 1rem;
+        }
+
+        &__comment {
+            max-width: 420px;
         }
     }
 }

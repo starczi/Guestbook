@@ -1,10 +1,12 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Guestbook.Models
 {
     public class Record
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int RecordId { get; set; }
 
         [Required(ErrorMessage = "Please enter your name")]

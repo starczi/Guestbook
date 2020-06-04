@@ -23,7 +23,7 @@ namespace Guestbook.Controllers
         {
             Record newRecord = new Record
             {
-                RecordId = 11,
+                RecordId = record.RecordId,
                 Nick = record.Nick,
                 DatePosted = DateTime.Now,
                 Country = record.Country,
